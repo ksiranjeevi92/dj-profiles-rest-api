@@ -64,16 +64,26 @@ The below commands are used to manage SSH keys on your local development machine
 ls ~/.ssh/
 ```
 
+(or)
+
+```
+ls /Users/<user_name>/.ssh
+```
+
 **Print contents of public key**
 
 ```
+
 cat ~/.ssh/id_rsa.pub
+
 ```
 
 **Generate new SSH key on your local machine**
 
 ```
+
 ssh-keygen -t rsa -b 4096 -C "EMAIL ADDRESS"
+
 ```
 
 ## Virtual Environments
@@ -83,19 +93,25 @@ The below commands are used for managing Virtual Environments using Python3-env.
 **Create new environment**
 
 ```
+
 python -m venv ~/env
+
 ```
 
 **Activate virtual environment**
 
 ```
+
 source ~/env/bin/activate
+
 ```
 
 **De-activate virtual environment**
 
 ```
+
 deactivate
+
 ```
 
 **Install requirements from requirements.txt**
@@ -103,7 +119,9 @@ deactivate
 _Note: Virtual environment must be activated_
 
 ```
+
 pip install -r requirements.txt
+
 ```
 
 ## Django Management Commands
@@ -111,37 +129,49 @@ pip install -r requirements.txt
 **Create new Django project**
 
 ```
-django-admin.py startproject profiles_project  .
+
+django-admin.py startproject profiles_project .
+
 ```
 
 **Create new Django app**
 
 ```
+
 python manage.py startapp profiles_api
+
 ```
 
 **Start Django development server**
 
 ```
+
 python manage.py runserver 0.0.0.0:8000
+
 ```
 
 **Create database migrations file**
 
 ```
+
 python manage.py makemigrations
+
 ```
 
 **Run migrations**
 
 ```
+
 python manage.py migrate
+
 ```
 
 **Create new superuser**
 
 ```
+
 python manage.py createsuperuser
+
 ```
 
 ## Vagrant
@@ -151,19 +181,25 @@ These commands are used for managing Vagrant using the GitBash or Terminal windo
 **Initialise Vagrant on project**
 
 ```
+
 vagrant init ubuntu/bionic64
+
 ```
 
 **Start Vagrant box**
 
 ```
+
 vagrant up
+
 ```
 
 **Connect to Vagrant box**
 
 ```
+
 vagrant ssh
+
 ```
 
 **Disconnect from Vagrant box**
@@ -171,19 +207,25 @@ vagrant ssh
 _Note: This command is a standard linux command for ending an SSH session_
 
 ```
+
 exit
+
 ```
 
 **Stop Vagrant box**
 
 ```
+
 vagrant halt
+
 ```
 
 **Remove Vagrant box**
 
 ```
+
 vagrant destroy
+
 ```
 
 **Update Vagrant box image**
@@ -191,7 +233,9 @@ vagrant destroy
 _Note: you must rebuild the image after updating_
 
 ```
+
 vagrant box update
+
 ```
 
 ## Terminal / GitBash Commands
@@ -199,11 +243,19 @@ vagrant box update
 Change directory
 
 ```
+
 cd /directory_name
+
 ```
 
 Change to parent directory
 
 ```
+
 cd ..
+
+```
+
+```
+
 ```
